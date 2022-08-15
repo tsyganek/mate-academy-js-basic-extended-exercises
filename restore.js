@@ -4,7 +4,6 @@ function restoreNames(users) {
       const arr = user.fullName.split(" ");
       user.firstName = arr[0];
     }
-    console.log(users);
   }
 }
 
