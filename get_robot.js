@@ -6,6 +6,11 @@
 
 function getRobotSchema(robot) {
   let obj = {};
+  for (const [key, value] of Object.entries(robot)) {
+    obj[key] = typeof value;
+  }
+  console.log(obj);
+  return obj;
 }
 
 const robot = {
