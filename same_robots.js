@@ -25,17 +25,8 @@ function compareRobots(robot1, robot2) {
     }
   }
 
-  // for (key of robot1Keys) {
-  //   if (robot1[key] !== robot2[key]) {
-  //     console.log(robot1[key]);
-  //     console.log(robot2[key]);
-  //     console.log("false2");
-  //     return false;
-  //   }
-  // }
-
-  let robot1Values = Object.values(robot1);
-  let robot2Values = Object.values(robot2);
+  const robot1Values = Object.values(robot1);
+  const robot2Values = Object.values(robot2);
 
   for (let i = 1; i < robot1Values.length; i++) {
     if (robot1Values[i] !== robot2Values[i]) {
@@ -43,7 +34,6 @@ function compareRobots(robot1, robot2) {
       return false;
     }
   }
-
   console.log(true);
   return true;
 }
